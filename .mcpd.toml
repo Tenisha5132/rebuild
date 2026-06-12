@@ -1,0 +1,11 @@
+[mcp.servers.doc-parser]
+command = "python"
+args = ["tools/doc-parser/server.py"]
+
+[mcp.servers.ner-detector]
+command = "python"
+args = ["tools/ner-detector/server.py"]
+
+[mcp.servers.redactor]
+command = "python"
+args = ["tools/redactor/server.py"]

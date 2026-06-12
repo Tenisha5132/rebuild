@@ -1,0 +1,4 @@
+John Doe went to the hospital located in London on Tuesday.
+He was treated by Dr. Smith for a severe headache.
+His employer, Acme Corp, was notified of his absence.
+Please make sure the medical records are sent to his address at 123 Main St.
