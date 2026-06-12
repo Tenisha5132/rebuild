@@ -1,0 +1,34 @@
+2026-06-12T12:30:44.255+0530 [INFO]  mcpd: Development-focused mode: addr=0.0.0.0:8090 override=localhost:8090
+2026-06-12T12:45:32.234+0530 [INFO]  mcpd: Development-focused mode: addr=0.0.0.0:8090 override=localhost:8090
+2026-06-12T12:45:32.236+0530 [INFO]  mcpd: Launching daemon in dev mode: addr=localhost:8090
+2026-06-12T12:45:32.240+0530 [DEBUG] mcpd.daemon.mcp.ner-detector: attempting to start server: binary=uvx
+2026-06-12T12:45:32.240+0530 [DEBUG] mcpd.daemon.mcp.doc-parser: attempting to start server: binary=uvx
+2026-06-12T12:45:32.241+0530 [DEBUG] mcpd.daemon.mcp.redactor: attempting to start server: binary=uvx
+2026-06-12T12:45:32.242+0530 [INFO]  mcpd.daemon.mcp.ner-detector: Started
+2026-06-12T12:45:32.243+0530 [INFO]  mcpd.daemon.mcp.redactor: Started
+2026-06-12T12:45:32.243+0530 [INFO]  mcpd.daemon.mcp.doc-parser: Started
+2026-06-12T12:45:32.332+0530 [INFO]  mcpd.daemon.mcp.doc-parser: An executable named `mozilla-redactor` is not provided by package `mozilla-redactor`.
+2026-06-12T12:45:32.332+0530 [INFO]  mcpd.daemon.mcp.doc-parser: The following executables are available:
+2026-06-12T12:45:32.332+0530 [INFO]  mcpd.daemon.mcp.doc-parser: - doc-parser-server
+2026-06-12T12:45:32.332+0530 [INFO]  mcpd.daemon.mcp.doc-parser: - ner-detector-server
+2026-06-12T12:45:32.333+0530 [INFO]  mcpd.daemon.mcp.doc-parser: - redactor-server
+2026-06-12T12:45:32.333+0530 [INFO]  mcpd.daemon.mcp.doc-parser: Use `uvx --from mozilla-redactor <EXECUTABLE-NAME>` instead.
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: An executable named `mozilla-redactor` is not provided by package `mozilla-redactor`.
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: The following executables are available:
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: - doc-parser-server
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: - ner-detector-server
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: - redactor-server
+2026-06-12T12:45:32.344+0530 [INFO]  mcpd.daemon.mcp.redactor: Use `uvx --from mozilla-redactor <EXECUTABLE-NAME>` instead.
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: An executable named `mozilla-redactor` is not provided by package `mozilla-redactor`.
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: The following executables are available:
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: - doc-parser-server
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: - ner-detector-server
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: - redactor-server
+2026-06-12T12:45:32.362+0530 [INFO]  mcpd.daemon.mcp.ner-detector: Use `uvx --from mozilla-redactor <EXECUTABLE-NAME>` instead.
+2026-06-12T12:46:02.246+0530 [INFO]  mcpd.daemon: Shutting down MCP servers and client connections
+2026-06-12T12:46:02.246+0530 [ERROR] mcpd: daemon exited with error:
+  error=
+  | ner-detector: error initializing MCP client: 'ner-detector': transport error: context deadline exceeded
+  | redactor: error initializing MCP client: 'redactor': transport error: context deadline exceeded
+  | doc-parser: error initializing MCP client: 'doc-parser': transport error: context deadline exceeded
+  

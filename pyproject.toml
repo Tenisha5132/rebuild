@@ -12,6 +12,11 @@ dependencies = [
     "openai>=1.0.0"
 ]
 
+[project.scripts]
+doc-parser-server = "tools.doc_parser.server:main"
+ner-detector-server = "tools.ner_detector.server:main"
+redactor-server = "tools.redactor.server:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

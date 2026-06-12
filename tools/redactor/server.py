@@ -28,3 +28,7 @@ def apply_redaction(original_text: str, entities_to_redact: list[str]) -> str:
 
 if __name__ == "__main__":
     mcp.run()
+
+def main():
+    mcp.run()
+

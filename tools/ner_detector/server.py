@@ -33,3 +33,7 @@ def detect_entities(text: str) -> str:
 
 if __name__ == "__main__":
     mcp.run()
+
+def main():
+    mcp.run()
+

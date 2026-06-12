@@ -1,11 +1,17 @@
-[mcp.servers.doc-parser]
-command = "python"
-args = ["tools/doc-parser/server.py"]
+[[servers]]
+name = "doc-parser"
+package = "uvx::mozilla-redactor@0.1.0"
+command = "doc-parser-server"
+tools = ["extract_text"]
 
-[mcp.servers.ner-detector]
-command = "python"
-args = ["tools/ner-detector/server.py"]
+[[servers]]
+name = "ner-detector"
+package = "uvx::mozilla-redactor@0.1.0"
+command = "ner-detector-server"
+tools = ["detect_entities"]
 
-[mcp.servers.redactor]
-command = "python"
-args = ["tools/redactor/server.py"]
+[[servers]]
+name = "redactor"
+package = "uvx::mozilla-redactor@0.1.0"
+command = "redactor-server"
+tools = ["apply_redaction"]
